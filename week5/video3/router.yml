@@ -1,0 +1,11 @@
+---
+- hosts: local
+  vars:
+    hostname: cisco-router1
+
+  tasks: 
+   - name: Generate configuration file
+     template: src=/home/amit/git/My_Pynet/week5/video3/router1.j2 
+                 dest=/home/amit/git/My_Pynet/week5/video3/cisco-router1.txt
+
+ 
